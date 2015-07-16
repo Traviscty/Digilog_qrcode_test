@@ -15,6 +15,9 @@
 		00A3FEDA1B57768D00153F56 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00A3FED91B57768D00153F56 /* Images.xcassets */; };
 		00A3FEDD1B57768D00153F56 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00A3FEDB1B57768D00153F56 /* LaunchScreen.xib */; };
 		00A3FEE91B57768D00153F56 /* Digilog_qrcode_testTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A3FEE81B57768D00153F56 /* Digilog_qrcode_testTests.m */; };
+		00A3FEF31B57793900153F56 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A3FEF21B57793900153F56 /* AVFoundation.framework */; };
+		00A3FEF51B57794700153F56 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A3FEF41B57794700153F56 /* CoreGraphics.framework */; };
+		00A3FEF71B5787C000153F56 /* Beep.wav in Resources */ = {isa = PBXBuildFile; fileRef = 00A3FEF61B5787C000153F56 /* Beep.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +45,9 @@
 		00A3FEE21B57768D00153F56 /* Digilog_qrcode_testTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Digilog_qrcode_testTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00A3FEE71B57768D00153F56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00A3FEE81B57768D00153F56 /* Digilog_qrcode_testTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Digilog_qrcode_testTests.m; sourceTree = "<group>"; };
+		00A3FEF21B57793900153F56 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		00A3FEF41B57794700153F56 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		00A3FEF61B5787C000153F56 /* Beep.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Beep.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +55,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00A3FEF51B57794700153F56 /* CoreGraphics.framework in Frameworks */,
+				00A3FEF31B57793900153F56 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +73,8 @@
 		00A3FEBD1B57768D00153F56 = {
 			isa = PBXGroup;
 			children = (
+				00A3FEF41B57794700153F56 /* CoreGraphics.framework */,
+				00A3FEF21B57793900153F56 /* AVFoundation.framework */,
 				00A3FEC81B57768D00153F56 /* Digilog_qrcode_test */,
 				00A3FEE51B57768D00153F56 /* Digilog_qrcode_testTests */,
 				00A3FEC71B57768D00153F56 /* Products */,
@@ -83,6 +93,7 @@
 		00A3FEC81B57768D00153F56 /* Digilog_qrcode_test */ = {
 			isa = PBXGroup;
 			children = (
+				00A3FEF61B5787C000153F56 /* Beep.wav */,
 				00A3FECD1B57768D00153F56 /* AppDelegate.h */,
 				00A3FECE1B57768D00153F56 /* AppDelegate.m */,
 				00A3FED31B57768D00153F56 /* ViewController.h */,
@@ -202,6 +213,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00A3FEF71B5787C000153F56 /* Beep.wav in Resources */,
 				00A3FED81B57768D00153F56 /* Main.storyboard in Resources */,
 				00A3FEDD1B57768D00153F56 /* LaunchScreen.xib in Resources */,
 				00A3FEDA1B57768D00153F56 /* Images.xcassets in Resources */,
@@ -416,6 +428,7 @@
 				00A3FEEE1B57768D00153F56 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		00A3FEEF1B57768D00153F56 /* Build configuration list for PBXNativeTarget "Digilog_qrcode_testTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +437,7 @@
 				00A3FEF11B57768D00153F56 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

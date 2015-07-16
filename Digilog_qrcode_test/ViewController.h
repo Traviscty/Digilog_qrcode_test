@@ -7,9 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <AVCaptureMetadataOutputObjectsDelegate>
 
+@property (strong, nonatomic) IBOutlet UIView *viewPreview;
+@property (strong, nonatomic) IBOutlet UIButton *btnStart;
+@property (nonatomic, strong) AVCaptureSession *captureSession;
+@property (nonatomic, strong) AVCaptureVideoPreviewLayer *videoPreviewLayer;
+@property (strong, nonatomic) IBOutlet UILabel *resLabel;
 
+@property (nonatomic, strong) AVAudioPlayer *audioPlayer;
+
+-(void)loadBeepSound;
 @end
 
