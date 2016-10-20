@@ -27,11 +27,6 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="尚未讀取" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fMg-PS-TGL">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="0.15579608019999999" blue="0.14642800040000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cWA-pw-o0P">
                                 <state key="normal" title="開始掃描">
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -40,21 +35,26 @@
                                     <action selector="startStopReading:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="dde-FX-maf"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="尚未讀取" textAlignment="center" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fMg-PS-TGL">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.15579608019999999" blue="0.14642800040000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="CS5-H8-gaL" firstAttribute="top" secondItem="fMg-PS-TGL" secondAttribute="bottom" constant="20" id="3mw-hm-JLb"/>
                             <constraint firstAttribute="trailingMargin" secondItem="fMg-PS-TGL" secondAttribute="trailing" id="8AF-by-pr6"/>
                             <constraint firstItem="I14-2I-PTh" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="4" id="EK8-V9-eKB"/>
-                            <constraint firstItem="Y4h-HW-VtW" firstAttribute="top" secondItem="cWA-pw-o0P" secondAttribute="bottom" constant="12" id="Fhs-eX-0Ds"/>
-                            <constraint firstItem="cWA-pw-o0P" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="GbU-bo-5QT"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Y4h-HW-VtW" secondAttribute="trailing" id="UQl-gm-B4L"/>
+                            <constraint firstItem="Y4h-HW-VtW" firstAttribute="top" secondItem="cWA-pw-o0P" secondAttribute="bottom" constant="8" id="Fhs-eX-0Ds"/>
+                            <constraint firstItem="cWA-pw-o0P" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" constant="1.5" id="GbU-bo-5QT"/>
+                            <constraint firstItem="CS5-H8-gaL" firstAttribute="top" secondItem="Y4h-HW-VtW" secondAttribute="bottom" constant="90" id="QCh-ll-gLn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Y4h-HW-VtW" secondAttribute="trailing" constant="-2" id="UQl-gm-B4L"/>
                             <constraint firstItem="cWA-pw-o0P" firstAttribute="top" secondItem="I14-2I-PTh" secondAttribute="bottom" constant="8" id="Vig-qf-bQ7"/>
-                            <constraint firstItem="fMg-PS-TGL" firstAttribute="top" secondItem="Y4h-HW-VtW" secondAttribute="bottom" constant="8" id="XA6-3x-RfP"/>
                             <constraint firstAttribute="trailingMargin" secondItem="I14-2I-PTh" secondAttribute="trailing" id="XgW-KU-1bn"/>
                             <constraint firstItem="I14-2I-PTh" firstAttribute="top" secondItem="wIG-0e-uPn" secondAttribute="bottom" id="a0D-gN-ZAE"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="fMg-PS-TGL" secondAttribute="leading" id="ce3-cz-IAc"/>
-                            <constraint firstItem="Y4h-HW-VtW" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="4" id="uaV-M1-MYP"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="fMg-PS-TGL" secondAttribute="leading" constant="-4" id="ce3-cz-IAc"/>
+                            <constraint firstItem="Y4h-HW-VtW" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="6" id="uaV-M1-MYP"/>
+                            <constraint firstItem="fMg-PS-TGL" firstAttribute="top" secondItem="Y4h-HW-VtW" secondAttribute="bottom" constant="8" id="ujK-U6-cLQ"/>
                         </constraints>
                     </view>
                     <connections>
